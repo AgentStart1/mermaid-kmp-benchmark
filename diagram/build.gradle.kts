@@ -7,4 +7,3 @@ kotlin {
   commonMain { kotlin.srcDirs("../.upstream/diagram/diagram-core/src/commonMain/kotlin", "../.upstream/diagram/diagram-parser/src/commonMain/kotlin"); dependencies {  } }
  }
 }
-

@@ -62,4 +62,3 @@ class Adapters {
   return result
  }
 }
-
