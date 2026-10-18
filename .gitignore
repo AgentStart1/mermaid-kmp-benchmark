@@ -1,0 +1,11 @@
+.gradle/
+/build/
+/cmp/build/
+/native/build/
+/lugf/build/
+/diagram/build/
+/bench/build/
+.upstream/
+__pycache__/
+
+public/

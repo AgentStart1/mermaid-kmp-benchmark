@@ -1,0 +1,95 @@
+{
+  "searched_on": "2026-10-18",
+  "queries": [
+    "GitHub repository search: mermaid language:Kotlin (first 50 matches)",
+    "mermaid Kotlin Multiplatform library",
+    "mermaid KMP parser renderer",
+    "mermaid user:lugf027"
+  ],
+  "scope": "Native Mermaid source parsing/rendering exposed to Kotlin Multiplatform; discovery is a dated snapshot, not an exhaustive ecosystem census.",
+  "candidates": [
+    {
+      "id": "cmp",
+      "repository": "https://github.com/swithun-liu/cmp-mermaid",
+      "commit": "3eaad1a383e3542750b49e8870d9648b7dbdbac8",
+      "status": "measured",
+      "stages": [
+        "scene"
+      ],
+      "notes": "Pure Kotlin; parse + layout + scene construction. Compose painting excluded. Fixed approximate text metrics; not SVG."
+    },
+    {
+      "id": "native",
+      "repository": "https://github.com/botiverse/mermaid-native",
+      "commit": "01c34d8b460b1045708159935f4be0b1b59a7462",
+      "status": "measured",
+      "stages": [
+        "parse",
+        "svg"
+      ],
+      "notes": "Common-source JVM adaptation; upstream has no official desktop JVM target. Adds only the Gantt clock actual and generated version constant. FixedWidthTextMeasurer."
+    },
+    {
+      "id": "lugf",
+      "repository": "https://github.com/lugf027/mermaid",
+      "commit": "f73ba76bd716c325fa3c3a174735d752c7feacd9",
+      "status": "measured",
+      "stages": [
+        "parse",
+        "svg"
+      ],
+      "notes": "Public MermaidApi; parse + layout + SVG serialization for SVG stage. Uses upstream text measurements and layout defaults."
+    },
+    {
+      "id": "diagram",
+      "repository": "https://github.com/huarangmeng/diagram",
+      "commit": "bc709ec1afc9d624b64e4670611e0fe0b8dc2bfc",
+      "status": "measured",
+      "stages": [
+        "parse"
+      ],
+      "notes": "Complete lexer/parser session + model snapshot through the flowchart/sequence parser classes. Rendering facade and layout are not benchmarked. Subgraph fails in this parser path."
+    },
+    {
+      "id": "rust-kmp",
+      "repository": "https://github.com/storytellerF/mermaid-rust-kmp",
+      "status": "measured",
+      "notes": "Published io.github.storytellerf:mermaidffi-kmp:0.0.1-alpha5; public renderMermaid API, JVM facade + JNI + Rust rendering + returned SVG included. Uses bundled Windows x86_64 native binary, not a fresh Rust source build. No standalone parse API; SVG validation checks XML, required labels and nonempty graphics, not parser AST counts. Published artifact verified against Maven SHA-256. README warning concerns older alpha2; alpha5 includes Windows resources.",
+      "commit": "cef7da64b6124bd0bb72f8f3732a2da22b99259a",
+      "stages": [
+        "svg"
+      ]
+    },
+    {
+      "id": "android",
+      "repository": "https://github.com/hggz/Mermaid-Android",
+      "status": "excluded",
+      "notes": "Android Canvas library, not Kotlin Multiplatform."
+    },
+    {
+      "id": "template",
+      "repository": "https://github.com/nayunjae/mermaid-multiplatform",
+      "status": "excluded",
+      "notes": "README describes a Fibonacci multiplatform template, not a Mermaid parser/renderer."
+    },
+    {
+      "id": "dsl",
+      "repository": "https://github.com/jeongsoolee09/mermaid-kt",
+      "status": "excluded",
+      "notes": "Kotlin DSL generating Mermaid source, not parsing/rendering it."
+    },
+    {
+      "id": "zusrsoft-diagram",
+      "repository": "https://github.com/zusrsoft/diagram",
+      "status": "not_measured",
+      "notes": "Independently maintained continuation, not a repository rename. At the inspected commits, all diagram-core common/JVM Kotlin files and all Mermaid parser Kotlin files are byte-identical to huarangmeng/diagram. The only core/parser Kotlin difference is in the unrelated PlantUML activity parser. Shared Mermaid parser code is measured once in this run; this is not a claim of equivalence for the full rendering SDK. See discovery-source-comparison.json.",
+      "commit": "60ba44c3f1d5349c32725591750cfd71e8ac7998"
+    },
+    {
+      "id": "template-yunjaena",
+      "repository": "https://github.com/yunjaena/mermaid-multiplatform",
+      "status": "excluded",
+      "notes": "Repository search also surfaces a similarly named multiplatform template; not admitted without a demonstrated Mermaid parser/renderer."
+    }
+  ]
+}

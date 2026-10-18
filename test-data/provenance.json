@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/storytellerF/mermaid-rust-benchmark",
+  "commit": "f3bceea96ee6493b7743fff415387f3f31e15ca5",
+  "files": {
+    "complex_flowchart.mmd": {
+      "path": "test-data/complex_flowchart.mmd",
+      "sha256": "f82d0fa034cda5e6a345089d80b3388ec9e21b70c82bd2cddc4563fe5024714f"
+    },
+    "sequence_diagram.mmd": {
+      "path": "test-data/sequence_diagram.mmd",
+      "sha256": "6e39fa56d5c80833fd05e268adfbe59f9b5190590259a7d28d69f7e487174dbe"
+    },
+    "simple_flowchart.mmd": {
+      "path": "test-data/simple_flowchart.mmd",
+      "sha256": "87e7b542b3e3da500d1507670ae143725cc87c91b1f48a1dedce3e2dd8e99eb0"
+    }
+  }
+}

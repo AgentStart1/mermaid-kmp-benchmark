@@ -1,0 +1,45 @@
+{
+  "cmp": {
+    "repository": "swithun-liu/cmp-mermaid",
+    "commit": "3eaad1a383e3542750b49e8870d9648b7dbdbac8",
+    "modules": [
+      "mermaid-core"
+    ]
+  },
+  "native": {
+    "repository": "botiverse/mermaid-native",
+    "commit": "01c34d8b460b1045708159935f4be0b1b59a7462",
+    "modules": [
+      "mermaid-core",
+      "mermaid-layout-api",
+      "mermaid-layout-simple",
+      "mermaid-render-svg"
+    ]
+  },
+  "lugf": {
+    "repository": "lugf027/mermaid",
+    "commit": "f73ba76bd716c325fa3c3a174735d752c7feacd9",
+    "modules": [
+      "mermaid-core"
+    ]
+  },
+  "diagram": {
+    "repository": "huarangmeng/diagram",
+    "commit": "bc709ec1afc9d624b64e4670611e0fe0b8dc2bfc",
+    "modules": [
+      "diagram-core",
+      "diagram-parser"
+    ]
+  },
+  "rust-kmp": {
+    "repository": "storytellerF/mermaid-rust-kmp",
+    "commit": "cef7da64b6124bd0bb72f8f3732a2da22b99259a",
+    "modules": [
+      "mermaid-ffi",
+      "templates",
+      "scripts"
+    ],
+    "artifact": "io.github.storytellerf:mermaidffi-kmp:0.0.1-alpha5",
+    "jvm_artifact_sha256": "e5159dac3a3ddb0ec53637a58d83a144b633e26894a122d0a4725508f81bd068"
+  }
+}
