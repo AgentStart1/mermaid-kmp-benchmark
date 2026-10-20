@@ -38,7 +38,7 @@ Every successful cell gets a separate JMH process, JSON and log with a 300-secon
 
 ## CI
 
-GitHub Actions runs standard benchmarks on pushes to main and smoke checks on pull requests. Runs on different hardware must not be merged into a single ranking. Results are uploaded as artifacts. Manual dispatch can optionally publish the current report to GitHub Pages; enable Pages using GitHub Actions in repository settings first. No remote publication is performed by local scripts.
+The `.github/workflows/deploy-pages.yml` workflow follows mermaid-rust-benchmark: relevant pushes to main and manual dispatch run the standard benchmark, upload the Pages bundle, then automatically deploy it in the dependent `deploy` job. There is no separate publish input or pull-request smoke workflow. The Pages bundle includes the report as index.html plus its linked JSON data and SVG samples. Pages concurrency uses the `pages` group with cancel-in-progress enabled. Enable Pages using GitHub Actions in repository settings. Runs on different hardware must not be merged into a single ranking; the committed Windows snapshot and live CI measurements describe their own environments. Local scripts generate files only.
 
 ## Attribution
 

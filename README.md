@@ -4,7 +4,7 @@
 
 ## 查看结果
 
-[完整图表报告](report.html) 按测量阶段和图类型展示耗时、相对倍数、置信区间及 JVM 内存分配。下载或克隆仓库后，用浏览器打开 `report.html`；GitHub 文件页显示的是 HTML 源码。
+[在线图表报告](https://storytellerf.github.io/mermaid-kmp-benchmark/) 按测量阶段和图类型展示耗时、相对倍数、置信区间及 JVM 内存分配。相关改动合入 main 后会重新测量并自动更新在线报告；也可下载仓库，用浏览器打开本地 [report.html](report.html)。
 
 当前快照：**5 个库、20 项成功测量、1 项跳过**，测量于 2026-10-18，Windows x86_64 / JDK 21，Kotlin 2.3.21 / coroutines 1.11.0。
 
